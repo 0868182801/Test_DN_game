@@ -1,0 +1,83 @@
+using UnityEngine;
+using System.Collections; 
+
+public class PlayerCollision : MonoBehaviour    // Xử lý va chạm
+{
+    private GameManager gameManager;
+    private AudioManager audioManager;
+    private PlayerController playerController;
+    private int trapHitCount = 0;                // Đếm số lần va chạm với bẫy
+    private int killHitCount = 0;           // Đếm số lần va chạm với item bình thuốc
+
+    private void Awake() 
+    {
+        gameManager = FindAnyObjectByType<GameManager>();     
+        audioManager = FindAnyObjectByType<AudioManager>();
+        playerController = GetComponent<PlayerController>();
+    }
+    private void OnTriggerEnter2D(Collider2D collision)     // Ktra va chạm khi player chạm vào collider coin (có tích isTrigger)
+    {
+        if(collision.CompareTag("Coin")){   
+            Destroy(collision.gameObject);
+            audioManager.PlayCoinSound();
+            gameManager.AddScore(1);        // Số lượng điểm (points) tăng lên khi chạm 1 đồng coin
+            Debug.Log("Hit Coin");
+        }
+        else if (collision.CompareTag("Trap")||collision.CompareTag("Enemy"))
+        {
+            trapHitCount++;                  // Tăng số lần va chạm
+            Debug.Log("Hit Trap or Enemy " + trapHitCount);
+                
+            // Kích hoạt animation va chạm
+            playerController.TriggerHitAnimation();
+
+            if (trapHitCount >= 20)           // Lần thứ 2 -> Game Over
+            {
+                audioManager.PlayGameOverSound();
+                audioManager.backgroundAudioSource.Stop();
+                gameManager.GameOver();
+                Debug.Log("Die");
+            }
+            else
+            {
+                // Lần đầu: phát âm thanh va chạm nhẹ
+                audioManager.PlayKillSound(); // Bạn cần thêm clip này trong AudioManager
+            }
+        }
+        else if (collision.CompareTag("Killer"))
+        {
+            killHitCount++;                  // Tăng số lần va chạm
+            Destroy(collision.gameObject);
+            Debug.Log("Hit Killer: " + killHitCount);
+            playerController.TriggerHitAnimation();
+
+            if (killHitCount >= 2)           // Lần thứ 2 -> Game Over
+            {
+                audioManager.PlayGameOverSound();
+                audioManager.backgroundAudioSource.Stop();
+                gameManager.GameOver();
+                Debug.Log("Die");
+            }
+            else
+            {
+                // Lần đầu: phát âm thanh va chạm nhẹ
+                audioManager.PlayKillSound(); // Bạn cần thêm clip này trong AudioManager
+            }
+        }
+        else if (collision.CompareTag("Max"))
+        {
+            audioManager.PlayGameOverSound();
+            audioManager.backgroundAudioSource.Stop();
+            gameManager.GameOver();
+            Debug.Log("Die");
+        }
+        else if(collision.CompareTag("Key"))   
+        {
+            audioManager.backgroundAudioSource.Stop();
+            audioManager.PlayKeySound();
+            Destroy(collision.gameObject);
+            gameManager.GameWin();
+            Debug.Log("You Win");
+        }       
+    }
+}
