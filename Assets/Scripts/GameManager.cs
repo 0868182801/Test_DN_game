@@ -7,21 +7,28 @@ public class GameManager : MonoBehaviour
     private int score = 0;
     [SerializeField] private TextMeshProUGUI scoreText;
     [SerializeField] private TextMeshProUGUI highScoreText;
+    [SerializeField] private GameObject scoreTextObject;    // GameObject chứa TextMeshProUGUI để hiển thị điểm số
+    [SerializeField] private GameObject highScoreTextObject;
     [SerializeField] private GameObject gameOverUi;     // Panel game over
     [SerializeField] private GameObject gameWinUi;      
+    [SerializeField] private GameObject gameStart;      //Hướng dẫn bắt đầu chơi 
     private bool isGameOver = false;   // Kiểm tra game thua chưa
     private bool isGameWin = false;   
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        UpdateScore();  // Khi game bắt đầu cập nhật lại điểm
-        gameOverUi.SetActive(false); // Ẩn panel gameover
-        gameWinUi.SetActive(true);     
+        StartGame(); 
         highScore = GetScoreData();
-        highScoreText.text = highScore.ToString(); // Hiển thị điểm cao khi bắt đầu
+        highScoreText.text = "Score:" + Mathf.FloorToInt(highScore);
     }
     
+    void Update()
+    {
+        HandleStartGameInput();
+        UpdateScore();  // Khi game bắt đầu cập nhật lại điểm
+    }
+
     public void AddScore(int points)
     {
         if(!isGameOver && !isGameWin)  // Kiểm tra nếu game chưa thua hoặc chưa win game tức đang chơi 
@@ -31,8 +38,29 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    private void StartGame()
+    {
+        Time.timeScale = 0;        
+        gameOverUi.SetActive(false); // Ẩn panel gameover
+        gameWinUi.SetActive(false);  // Ẩn panel win
+        gameStart.SetActive(true);   // Hiển thị hướng dẫn bắt đầu
+    }
+
+    private void HandleStartGameInput()     //Kiểm tra nếu người chơi đã nhấn phím thì bắt đầu trò chơi
+    {
+        if(Input.GetKeyDown(KeyCode.Space)) // Nhấn phím Space để bắt đầu chơi
+        {
+            Time.timeScale = 1; 
+            gameStart.SetActive(false); // Ẩn hướng dẫn bắt đầu
+            gameWinUi.SetActive(true); 
+            scoreTextObject.SetActive(true); // Hiển thị điểm số
+            highScoreTextObject.SetActive(true); // Hiển thị điểm cao
+        }
+    }
+
     private void UpdateScore()  
     {
+        //scoreText.text = "Score:" + Mathf.FloorToInt(score);
         scoreText.text = score.ToString();  // score là kiểu nguyên mà scoreText kiểu chuỗi lên phải ép kiểu để gán
     }
 
@@ -43,10 +71,11 @@ public class GameManager : MonoBehaviour
         if (score > highScore)
         {
             highScore = score;
-            highScoreText.text = highScore.ToString();
+            //highScoreText.text = highScore.ToString();
+            highScoreText.text = "Score:" + Mathf.FloorToInt(highScore);
             PlayerPrefs.SetInt(highScoreKey, highScore);
             PlayerPrefs.Save();
-            Debug.Log("Save TOP SCORE");
+            Debug.Log("SAVE TOP SCORE");
         }
     }
 

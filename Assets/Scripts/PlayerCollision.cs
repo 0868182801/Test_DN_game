@@ -17,11 +17,19 @@ public class PlayerCollision : MonoBehaviour    // Xử lý va chạm
     }
     private void OnTriggerEnter2D(Collider2D collision)     // Ktra va chạm khi player chạm vào collider coin (có tích isTrigger)
     {
-        if(collision.CompareTag("Coin")){   
+        /* if(collision.CompareTag("Coin")){   
             Destroy(collision.gameObject);
             audioManager.PlayCoinSound();
             gameManager.AddScore(1);        // Số lượng điểm (points) tăng lên khi chạm 1 đồng coin
             Debug.Log("Hit Coin");
+        } */
+        if(collision.CompareTag("Coin") || collision.CompareTag("Coins"))
+        {
+            Destroy(collision.gameObject);
+            audioManager.PlayCoinSound();
+            if(collision.CompareTag("Coin")==true) gameManager.AddScore(1);   // Số lượng điểm (points) tăng lên khi chạm 1 đồng coin
+            else gameManager.AddScore(10);
+            Debug.Log("Hit Coin");      
         }
         else if (collision.CompareTag("Trap")||collision.CompareTag("Enemy"))
         {

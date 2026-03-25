@@ -51,7 +51,8 @@ public class PlayerController : MonoBehaviour
         if(Input.GetButtonDown("Jump") && isGrounded)   //Trong unity mặc định nhảy là phím space
         {
             audioManager.PlayJumpSound();
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce); // Chỉ thay đổi y
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce); // Chỉ thay đổi y  
+            
         }
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);  // Ktra xem có Collider nào trong vòng tròn không
         /*
