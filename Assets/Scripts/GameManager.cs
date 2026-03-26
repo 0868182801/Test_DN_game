@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject gameOverUi;     // Panel game over
     [SerializeField] private GameObject gameWinUi;      
     [SerializeField] private GameObject gameStart;      //Hướng dẫn bắt đầu chơi 
+    [SerializeField] private GameObject menubutton;    // Nút menu  
     private bool isGameOver = false;   // Kiểm tra game thua chưa
     private bool isGameWin = false;   
 
@@ -25,6 +26,7 @@ public class GameManager : MonoBehaviour
     
     void Update()
     {
+        if(isGameOver || isGameWin) return; 
         HandleStartGameInput();
         UpdateScore();  // Khi game bắt đầu cập nhật lại điểm
     }
@@ -44,6 +46,9 @@ public class GameManager : MonoBehaviour
         gameOverUi.SetActive(false); // Ẩn panel gameover
         gameWinUi.SetActive(false);  // Ẩn panel win
         gameStart.SetActive(true);   // Hiển thị hướng dẫn bắt đầu
+        scoreTextObject.SetActive(false); // Tắt hiển thị điểm số
+        highScoreTextObject.SetActive(false); // Tắt hiển thị điểm cao
+        menubutton.SetActive(false); // Ẩn nút menu chưa bắt đầu trò chơi
     }
 
     private void HandleStartGameInput()     //Kiểm tra nếu người chơi đã nhấn phím thì bắt đầu trò chơi
@@ -51,10 +56,10 @@ public class GameManager : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space)) // Nhấn phím Space để bắt đầu chơi
         {
             Time.timeScale = 1; 
-            gameStart.SetActive(false); // Ẩn hướng dẫn bắt đầu
-            gameWinUi.SetActive(true); 
-            scoreTextObject.SetActive(true); // Hiển thị điểm số
-            highScoreTextObject.SetActive(true); // Hiển thị điểm cao
+            gameStart.SetActive(false); 
+            scoreTextObject.SetActive(true); 
+            highScoreTextObject.SetActive(true); 
+            menubutton.SetActive(true); 
         }
     }
 
@@ -92,15 +97,24 @@ public class GameManager : MonoBehaviour
         score = 0;
         Time.timeScale = 0;             // K thể ấn phím
         gameOverUi.SetActive(true);     // Hiển thị panel gameover 
-        gameWinUi.SetActive(false);
+        //gameWinUi.SetActive(false);
         SaveScoreData();
     }
 
     public void GameWin()
     {
         isGameWin = true;
-        //gameWinUi.SetActive(true); // Hiển thị giao diện thắng khi người chơi thắng
-        Time.timeScale = 1; // Tạm dừng trò chơi khi thắng
+        string currentScene = SceneManager.GetActiveScene().name;   // Lấy tên của cảnh hiện tại để kiểm tra
+        if(currentScene == "Game4") // Chỉ màn cuối mới hiện Win
+        {
+            gameWinUi.SetActive(true);
+            Time.timeScale = 0; // Dừng game khi thắng
+        }
+        else
+        {
+            // Nếu chưa phải màn cuối thì chuyển sang màn tiếp theo
+            Time.timeScale = 1;
+        }
         SaveScoreData();
     }
 
@@ -110,7 +124,7 @@ public class GameManager : MonoBehaviour
         isGameWin = false; // Đặt lại trạng thái thắng khi khởi động lại
         score = 0;
         UpdateScore();
-        Time.timeScale = 1;             //Nhấn phím bthg
+        Time.timeScale = 1;   //Nhấn phím bthg
         SceneManager.LoadScene(SceneManager.GetActiveScene().name); // Tải lại cảnh hiện tại    
     }
 
