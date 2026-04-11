@@ -6,12 +6,21 @@ using UnityEngine.SceneManagement;
 public class NextLevel : MonoBehaviour
 {
     private GameManager gameManager;
-    public string namemanchoi;
+    public string namemanchoi;     
+    private void Awake()
+    {
+        gameManager = FindAnyObjectByType<GameManager>();   
+    }
     public void LoadManChoiMoi()
     {
-        if(SceneManager.GetActiveScene().name == "Game4")
+        // LƯU MÀN CHƠI HIỆN TẠI
+        string nameScene = SceneManager.GetActiveScene().name;   
+        PlayerPrefs.SetString("ContinueScene", namemanchoi);        // Màn chơi tiếp theo 
+        PlayerPrefs.Save();
+
+        if(nameScene == "Game4")     // Chỉ hiện game win khi hoàn thành màn chơi 4
         {
-            gameManager.GameWin();      // Chỉ hiện game win khi win màn 4
+            gameManager.GameWin();
         }
         else 
         {

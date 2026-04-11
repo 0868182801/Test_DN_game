@@ -101,6 +101,11 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 0;             // K thể ấn phím
         gameOverUi.SetActive(true);     // Hiển thị panel gameover 
         //gameWinUi.SetActive(false);
+
+        // Lưu màn chơi hiện tại khi thua để có thể tiếp tục sau này
+        string nameScene = SceneManager.GetActiveScene().name;
+        PlayerPrefs.SetString("ContinueScene", nameScene);
+        PlayerPrefs.Save();
         SaveScoreData();
     }
 
