@@ -11,6 +11,7 @@ TagManager:
   - Max
   - Killer
   - Coins
+  - Heal
   layers:
   - Default
   - TransparentFX

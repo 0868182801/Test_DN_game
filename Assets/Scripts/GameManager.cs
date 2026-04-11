@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject gameOverUi;     // Panel game over
     [SerializeField] private GameObject gameWinUi;      
     [SerializeField] private GameObject gameStart;      //Hướng dẫn bắt đầu chơi 
+    [SerializeField] private GameObject threeTym;  // Hình ảnh 3 trái tim đại diện cho mạng sống của player
     [SerializeField] private GameObject menubutton;    // Nút menu  
     private bool isGameOver = false;   // Kiểm tra game thua chưa
     private bool isGameWin = false;   
@@ -48,6 +49,7 @@ public class GameManager : MonoBehaviour
         gameStart.SetActive(true);   // Hiển thị hướng dẫn bắt đầu
         scoreTextObject.SetActive(false); // Tắt hiển thị điểm số
         highScoreTextObject.SetActive(false); // Tắt hiển thị điểm cao
+        threeTym.SetActive(false); // Ẩn hình ảnh 3 trái tim
         menubutton.SetActive(false); // Ẩn nút menu chưa bắt đầu trò chơi
     }
 
@@ -57,6 +59,7 @@ public class GameManager : MonoBehaviour
         {
             Time.timeScale = 1; 
             gameStart.SetActive(false); 
+            threeTym.SetActive(true);
             scoreTextObject.SetActive(true); 
             highScoreTextObject.SetActive(true); 
             menubutton.SetActive(true); 
