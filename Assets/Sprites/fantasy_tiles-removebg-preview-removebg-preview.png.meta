@@ -1,0 +1,404 @@
+fileFormatVersion: 2
+guid: 6bb9f14b5fcb778459297a094241eb75
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8587410716673209633
+    second: fantasy_tiles-removebg-preview-removebg-preview_0
+  - first:
+      213: -1214847266894167894
+    second: fantasy_tiles-removebg-preview-removebg-preview_1
+  - first:
+      213: -8764527967673896211
+    second: fantasy_tiles-removebg-preview-removebg-preview_2
+  - first:
+      213: 1588194885900137256
+    second: fantasy_tiles-removebg-preview-removebg-preview_3
+  - first:
+      213: -4202985156724460058
+    second: fantasy_tiles-removebg-preview-removebg-preview_4
+  - first:
+      213: -4919379557498367357
+    second: fantasy_tiles-removebg-preview-removebg-preview_5
+  - first:
+      213: 4843336697701267609
+    second: fantasy_tiles-removebg-preview-removebg-preview_6
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: fantasy_tiles-removebg-preview-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 279
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12570bb7c8c9c2770800000000000000
+      internalID: 8587410716673209633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fantasy_tiles-removebg-preview-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 316
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 2, y: 0, z: 2, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa04b68e8def32fe0800000000000000
+      internalID: -1214847266894167894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fantasy_tiles-removebg-preview-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 283
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de232d6ff342e5680800000000000000
+      internalID: -8764527967673896211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fantasy_tiles-removebg-preview-removebg-preview_3
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 314
+        width: 94
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8237b2885d66a0610800000000000000
+      internalID: 1588194885900137256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fantasy_tiles-removebg-preview-removebg-preview_4
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 283
+        width: 14
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e5f231b44ffba5c0800000000000000
+      internalID: -4202985156724460058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fantasy_tiles-removebg-preview-removebg-preview_5
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 283
+        width: 14
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 382ddff3b5adabbb0800000000000000
+      internalID: -4919379557498367357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fantasy_tiles-removebg-preview-removebg-preview_6
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 62
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 998f812c01df63340800000000000000
+      internalID: 4843336697701267609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fantasy_tiles-removebg-preview-removebg-preview_7
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 285
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 2, y: 0, z: 2, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f430ddeed668804b9799729b5b9ad56
+      internalID: 1760143821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fantasy_tiles-removebg-preview-removebg-preview_8
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 314
+        width: 64
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a5b80f5436a4e349b7f6c9f670ef825
+      internalID: 1519434464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fantasy_tiles-removebg-preview-removebg-preview_9
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 48
+        width: 89
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d9b3ae600db89642a19f47bfc328736
+      internalID: -490014520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fantasy_tiles-removebg-preview-removebg-preview_10
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 110
+        width: 20
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9333fc193eb8696429b696800635f492
+      internalID: 670082508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: eb08d7297d9fa734689686d1d8c64cf6
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      fantasy_tiles-removebg-preview-removebg-preview_0: 8587410716673209633
+      fantasy_tiles-removebg-preview-removebg-preview_1: -1214847266894167894
+      fantasy_tiles-removebg-preview-removebg-preview_10: 670082508
+      fantasy_tiles-removebg-preview-removebg-preview_2: -8764527967673896211
+      fantasy_tiles-removebg-preview-removebg-preview_3: 1588194885900137256
+      fantasy_tiles-removebg-preview-removebg-preview_4: -4202985156724460058
+      fantasy_tiles-removebg-preview-removebg-preview_5: -4919379557498367357
+      fantasy_tiles-removebg-preview-removebg-preview_6: 4843336697701267609
+      fantasy_tiles-removebg-preview-removebg-preview_7: 1760143821
+      fantasy_tiles-removebg-preview-removebg-preview_8: 1519434464
+      fantasy_tiles-removebg-preview-removebg-preview_9: -490014520
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

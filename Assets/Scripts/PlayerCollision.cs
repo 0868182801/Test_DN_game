@@ -9,6 +9,15 @@ public class PlayerCollision : MonoBehaviour    // Xử lý va chạm
     private int trapHitCount = 0;                // Đếm số lần va chạm với bẫy
     private int killHitCount = 0;           // Đếm số lần va chạm với item bình thuốc
     [SerializeField] private GameObject[] hearts;  // Mảng chứa các hình ảnh trái tim đại diện cho mạng sống của player
+    [SerializeField] private GameObject Cong;  // Cổng dịch chuyển (Tận dụng làm điểm dịch chuyển khi chạm vào bẫy băng dịch chuyển)
+
+    void Update()
+    {
+        if(Cong != null)    // Player đã chạm vào cổng dịch chuyển (hoặc bẫy dịch chuyển) và chưa rời khỏi nó
+        {
+            transform.position = Cong.GetComponent<CongDichChuyen>().GetDiemDichChuyenDen().position;  // Đặt vị trí của player tại điểm dịch chuyển khi chạm vào cổng dịch chuyển
+        }  
+    }
 
     private void Awake() 
     {
@@ -18,12 +27,6 @@ public class PlayerCollision : MonoBehaviour    // Xử lý va chạm
     }
     private void OnTriggerEnter2D(Collider2D collision)     // Ktra va chạm khi player chạm vào collider coin (có tích isTrigger)
     {
-        /* if(collision.CompareTag("Coin")){   
-            Destroy(collision.gameObject);
-            audioManager.PlayCoinSound();
-            gameManager.AddScore(1);        // Số lượng điểm (points) tăng lên khi chạm 1 đồng coin
-            Debug.Log("Hit Coin");
-        } */
         if(collision.CompareTag("Coin") || collision.CompareTag("Coins"))
         {
             Destroy(collision.gameObject);
@@ -32,7 +35,7 @@ public class PlayerCollision : MonoBehaviour    // Xử lý va chạm
             else gameManager.AddScore(10);
             Debug.Log("Hit Coin");      
         }
-        else if (collision.CompareTag("Trap")||collision.CompareTag("Enemy"))
+        else if (collision.CompareTag("Trap") || collision.CompareTag("Enemy") || collision.CompareTag("TrapDichChuyen"))
         {
             trapHitCount++;      // Tăng số lần va chạm
             Debug.Log("Hit Trap or Enemy " + trapHitCount);
@@ -52,6 +55,11 @@ public class PlayerCollision : MonoBehaviour    // Xử lý va chạm
             {
                 // Lần đầu: phát âm thanh va chạm nhẹ
                 audioManager.PlayKillSound(); 
+            }
+            if (collision.CompareTag("TrapDichChuyen"))
+            {
+                Cong = collision.gameObject;
+                Debug.Log("Hit TrapDichChuyen");
             }
         }
         else if (collision.CompareTag("Killer"))
@@ -92,6 +100,19 @@ public class PlayerCollision : MonoBehaviour    // Xử lý va chạm
             Destroy(collision.gameObject);
             gameManager.GameWin();
             Debug.Log("You Win");
-        }       
+        } 
+        else if(collision.CompareTag("CongDichChuyen"))
+        {
+            Cong = collision.gameObject;    // Gán biến Cổng = đối tượng cổng dịch chuyển khi chạm vào tag nó
+            Debug.Log("Hit CongDichChuyen");
+        }      
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)     // Khi player rời khỏi collider cổng dịch chuyển
+    {
+        if(collision.CompareTag("CongDichChuyen") || collision.CompareTag("TrapDichChuyen"))
+        {
+            Cong = null;   // Reset biến Cổng khi rời khỏi cổng dịch chuyển
+        }
     }
 }

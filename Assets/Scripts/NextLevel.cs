@@ -18,7 +18,7 @@ public class NextLevel : MonoBehaviour
         PlayerPrefs.SetString("ContinueScene", namemanchoi);        // Màn chơi tiếp theo 
         PlayerPrefs.Save();
 
-        if(nameScene == "Game4")     // Chỉ hiện game win khi hoàn thành màn chơi 4
+        if(nameScene == "Game5")     // Chỉ hiện game win khi hoàn thành màn chơi 5
         {
             gameManager.GameWin();
         }

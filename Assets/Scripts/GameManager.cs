@@ -113,7 +113,7 @@ public class GameManager : MonoBehaviour
     {
         isGameWin = true;
         string currentScene = SceneManager.GetActiveScene().name;   // Lấy tên của cảnh hiện tại để kiểm tra
-        if(currentScene == "Game4") // Chỉ màn cuối mới hiện Win
+        if(currentScene == "Game5") // Chỉ màn cuối mới hiện Win
         {
             gameWinUi.SetActive(true);
             Time.timeScale = 0; // Dừng game khi thắng

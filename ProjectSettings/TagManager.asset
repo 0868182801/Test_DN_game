@@ -12,6 +12,8 @@ TagManager:
   - Killer
   - Coins
   - Heal
+  - CongDichChuyen
+  - TrapDichChuyen
   layers:
   - Default
   - TransparentFX
@@ -55,7 +57,7 @@ TagManager:
   - name: Ground
     uniqueID: 3313662169
     locked: 0
-  - name: ForGround
+  - name: ForeGround
     uniqueID: 78536401
     locked: 0
   - name: Enemy
@@ -63,6 +65,9 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 3933512069
+    locked: 0
+  - name: CongDichChuyen
+    uniqueID: 2915773409
     locked: 0
   - name: Item
     uniqueID: 1438858561

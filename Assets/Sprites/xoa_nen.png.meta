@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: d98c57d3fd08ad64fab8b93f7f17a8bc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3215390426027247260
+    second: xoa_nen_0
+  - first:
+      213: -4035197520414655769
+    second: xoa_nen_1
+  - first:
+      213: -1720923697472815927
+    second: xoa_nen_2
+  - first:
+      213: -6342549918702752268
+    second: xoa_nen_3
+  - first:
+      213: 891840536776506257
+    second: xoa_nen_4
+  - first:
+      213: -8759489041594635206
+    second: xoa_nen_5
+  - first:
+      213: -2565955237475560034
+    second: xoa_nen_6
+  - first:
+      213: 7052835406959447960
+    second: xoa_nen_7
+  - first:
+      213: 7791867550671382402
+    second: xoa_nen_8
+  - first:
+      213: 805036094094497718
+    second: xoa_nen_9
+  - first:
+      213: 3591549993758558449
+    second: xoa_nen_10
+  - first:
+      213: -2699151441869419542
+    second: xoa_nen_11
+  - first:
+      213: -8856437262849338821
+    second: xoa_nen_12
+  - first:
+      213: 1306878699291545910
+    second: xoa_nen_13
+  - first:
+      213: 4412734333793167806
+    second: xoa_nen_14
+  - first:
+      213: 3285877281868679106
+    second: xoa_nen_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: xoa_nen_0
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 339
+        width: 46
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c96cb8d7e8c5f9c20800000000000000
+      internalID: 3215390426027247260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xoa_nen_1
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 382
+        width: 37
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7eab52d0c391008c0800000000000000
+      internalID: -4035197520414655769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xoa_nen_2
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 382
+        width: 40
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ccb496d30d0e18e0800000000000000
+      internalID: -1720923697472815927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xoa_nen_3
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 425
+        width: 215
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fd2a85047cbaf7a0800000000000000
+      internalID: -6342549918702752268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xoa_nen_4
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 318
+        width: 173
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19b7bd63e34706c00800000000000000
+      internalID: 891840536776506257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xoa_nen_5
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 382
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3c23dd502b007680800000000000000
+      internalID: -8759489041594635206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xoa_nen_6
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 382
+        width: 25
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9557b87e45e36cd0800000000000000
+      internalID: -2565955237475560034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xoa_nen_7
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 318
+        width: 131
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89f8d136f64b0e160800000000000000
+      internalID: 7052835406959447960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xoa_nen_8
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 382
+        width: 17
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28729a61146422c60800000000000000
+      internalID: 7791867550671382402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xoa_nen_9
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 382
+        width: 19
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b7ded3ff001c2b00800000000000000
+      internalID: 805036094094497718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xoa_nen_10
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 360
+        width: 22
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f80903c0bfb7d130800000000000000
+      internalID: 3591549993758558449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xoa_nen_11
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 382
+        width: 24
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aebc3687010ba8ad0800000000000000
+      internalID: -2699151441869419542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xoa_nen_12
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 382
+        width: 14
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b32155c9b3d971580800000000000000
+      internalID: -8856437262849338821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xoa_nen_13
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 382
+        width: 42
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6311ccbb047f22210800000000000000
+      internalID: 1306878699291545910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xoa_nen_14
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 61
+        width: 727
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb969e53f7e2d3d30800000000000000
+      internalID: 4412734333793167806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xoa_nen_15
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 317
+        width: 56
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c70f418af7c99d20800000000000000
+      internalID: 3285877281868679106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 59d0d871655e69645ba5c926a05cc7b7
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      xoa_nen_0: 3215390426027247260
+      xoa_nen_1: -4035197520414655769
+      xoa_nen_10: 3591549993758558449
+      xoa_nen_11: -2699151441869419542
+      xoa_nen_12: -8856437262849338821
+      xoa_nen_13: 1306878699291545910
+      xoa_nen_14: 4412734333793167806
+      xoa_nen_15: 3285877281868679106
+      xoa_nen_2: -1720923697472815927
+      xoa_nen_3: -6342549918702752268
+      xoa_nen_4: 891840536776506257
+      xoa_nen_5: -8759489041594635206
+      xoa_nen_6: -2565955237475560034
+      xoa_nen_7: 7052835406959447960
+      xoa_nen_8: 7791867550671382402
+      xoa_nen_9: 805036094094497718
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

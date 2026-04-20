@@ -3291,13 +3291,13 @@ TextureImporter:
       name: preview-removebg-preview_115
       rect:
         serializedVersion: 2
-        x: 354
+        x: 380
         y: 208
-        width: 73
-        height: 91
+        width: 28
+        height: 28
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 1, y: 0, z: 2, w: 0}
       customData: 
       outline: []
       physicsShape: []
