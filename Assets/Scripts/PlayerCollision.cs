@@ -39,12 +39,12 @@ public class PlayerCollision : MonoBehaviour    // Xử lý va chạm
         {
             trapHitCount++;      // Tăng số lần va chạm
             Debug.Log("Hit Trap or Enemy " + trapHitCount);
-            hearts[hearts.Length - trapHitCount].SetActive(false);  // Ẩn hình ảnh tim tương ứng với số lần va chạm (giảm mạng sống) 
+            //hearts[hearts.Length - trapHitCount].SetActive(false);  // Ẩn hình ảnh tim tương ứng với số lần va chạm (giảm mạng sống) 
             
             // Kích hoạt animation va chạm
             playerController.TriggerHitAnimation();
 
-            if (trapHitCount >= 3)           // Lần thứ 3 -> Game Over
+            if (trapHitCount >= 300)           // Lần thứ 3 -> Game Over
             {
                 audioManager.PlayGameOverSound();
                 audioManager.backgroundAudioSource.Stop();
